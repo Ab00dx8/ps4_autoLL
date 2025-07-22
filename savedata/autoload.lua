@@ -17,7 +17,7 @@ elf_sender.__index = elf_sender
 
 syscall.resolve(
     {
-        sendto = 133
+        sendto = 137
     }
 )
 
