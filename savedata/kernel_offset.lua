@@ -327,7 +327,24 @@ ps4_kernel_offset_list = {
         TARGET_ID_OFFSET    = 0x21cc60d,
         SYSENT_661_OFFSET   = 0x110a760,
         JMP_RSI_GADGET      = 0x47b31
+    },
+    [{ "12.52" }] = {
+        XFAST_SYSCALL_addr              = 0x000001C0,
+        PRISON0_addr                    = 0x0111FA18,
+        ROOTVNODE_addr                  = 0x02136E90,
+        M_TEMP_addr                     = 0x01520D00,
+        MINI_SYSCORE_SELF_BINARY_addr   = 0x0153D6C8,
+        ALLPROC_addr                    = 0x01B28538,
+        SBL_DRIVER_MAPPED_PAGES_addr    = 0x02647350,
+        SBL_PFS_SX_addr                 = 0x0265C080,
+        SBL_KEYMGR_KEY_SLOTS_addr       = 0x02668040,
+        SBL_KEYMGR_KEY_RBTREE_addr      = 0x02668050,
+        SBL_KEYMGR_BUF_VA_addr          = 0x0266C000,
+        SBL_KEYMGR_BUF_GVA_addr         = 0x0266C808,
+        FPU_CTX_addr                    = 0x026542C0,
+        SYSENT_addr                     = 0x01102B70,
     }
+
 }
 
 function get_ps5_kernel_offset()
