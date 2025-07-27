@@ -1,5 +1,5 @@
 
-FORCE_LAPSE_EXPLOIT = false
+FORCE_LAPSE_EXPLOIT = True
 
 WRITABLE_PATH = "/av_contents/content_tmp/"
 LOG_FILE = WRITABLE_PATH .. "loader_log.txt"
@@ -174,7 +174,7 @@ function main()
 
     send_ps_notification(string.format("PS4 AutoLuaLapse HEN v%s\nFirmware: %s", AUTOLL_VERSION, FW_VERSION))
 
-    if tonumber(FW_VERSION) <= 12.02 then
+    if tonumber(FW_VERSION) <= 12.52 then
         kernel_exploit_lua = "lapse.lua"
     else
         notify(string.format("Unsupported firmware version (%s %s)", PLATFORM, FW_VERSION))
