@@ -53,6 +53,7 @@ require "thread"
 require "kernel_offset"
 require "kernel"
 require "gpu"
+require "ftp_server"
 
 function run_lua_code(lua_code)
     local script, err = loadstring(lua_code)
