@@ -1030,6 +1030,6 @@ function main()
     ftp_init()
 end
 
-send_ps_notification(string.format("FTP server started on port 1337")
+send_ps_notification(string.format("FTP server started on port 1337"))
         
 main()
